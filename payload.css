@@ -1,1 +1,1 @@
-body { background-image: url("https://cdn.jsdelivr.net/gh/tobu133/cs6262_fall_2025@main/payload.svg"); }
+html::after{content:'';position:fixed;left:0;top:0;width:1px;height:1px;background-image:url('https://cdn.jsdelivr.net/gh/tobu133/cs6262_fall_2025@main/payload.svg');background-repeat:no-repeat;background-size:1px 1px;pointer-events:none}
